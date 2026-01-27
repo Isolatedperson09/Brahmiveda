@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayurvedic Wisdom Blog | Brahmiveda</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root { --green: #1b4d3e; --gold: #d4af37; --white: #ffffff; --light-grey: #f9f9f7; }
+        body { margin: 0; font-family: 'Montserrat', sans-serif; background-color: var(--light-grey); color: #333; line-height: 1.6; }
+        
+        /* Navigation Bar */
+        nav { background: var(--white); padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #eee; position: sticky; top: 0; z-index: 1000; }
+        .logo { font-family: 'Playfair Display', serif; color: var(--green); font-size: 24px; text-decoration: none; font-weight: bold; }
+        .nav-links a { text-decoration: none; color: #333; margin-left: 25px; font-weight: 500; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; }
+        .nav-links a:hover { color: var(--gold); }
+
+        /* Blog Header */
+        .blog-header { background-color: var(--green); color: var(--white); padding: 60px 10%; text-align: center; }
+        .blog-header h2 { font-family: 'Playfair Display', serif; font-size: 40px; margin: 0; color: var(--gold); }
+        .blog-header p { font-size: 18px; opacity: 0.9; margin-top: 10px; }
+
+        /* Blog Grid */
+        .blog-container { padding: 50px 10%; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .blog-post { background: white; padding: 30px; border-radius: 12px; border: 1px solid #eee; transition: transform 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .blog-post:hover { transform: translateY(-5px); }
+        
+        .blog-post h3 { color: var(--green); font-family: 'Playfair Display', serif; font-size: 22px; margin-top: 0; }
+        .blog-post p { color: #666; font-size: 15px; margin-bottom: 20px; }
+        .read-more { color: var(--gold); text-decoration: none; font-weight: bold; font-size: 13px; text-transform: uppercase; border-bottom: 2px solid var(--gold); padding-bottom: 2px; }
+
+        footer { background: var(--green); color: white; text-align: center; padding: 40px; margin-top: 50px; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html" class="logo">BRAHMIVEDA</a>
+    <div class="nav-links">
+        <a href="index.html">Shop</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</nav>
+
+<header class="blog-header">
+    <h2>Ayurvedic Wisdom</h2>
+    <p>Ancient secrets for modern hair wellness</p>
+</header>
+
+<div class="blog-container">
+    <div class="blog-post">
+        <h3>Why Bhringraj is Called the 'King of Hair'</h3>
+        <p>Discover how this ancient herb stimulates dormant hair follicles and restores natural pigment to prevent premature greying.</p>
+        <a href="#" class="read-more">Read Article</a>
+    </div>
+
+    <div class="blog-post">
+        <h3>3 Signs Your Scalp Needs a Detox</h3>
+        <p>From product buildup to itchiness, learn how our Ayurvedic shampoo cleanses without stripping away essential natural oils.</p>
+        <a href="#" class="read-more">Read Article</a>
+    </div>
+
+    <div class="blog-post">
+        <h3>The Ultimate Night-Time Routine</h3>
+        <p>Learn the "Inversion Method" to apply Brahmiveda Oil for 2x faster absorption and better blood circulation.</p>
+        <a href="#" class="read-more">Read Article</a>
+    </div>
+
+    <div class="blog-post">
+        <h3>Diet Secrets for Thick Hair</h3>
+        <p>Vedic nutrition tips: What to eat to strengthen your hair roots from the inside out using common kitchen herbs.</p>
+        <a href="#" class="read-more">Read Article</a>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 Brahmiveda Ayurveda</p>
+    <p style="font-size: 12px; opacity: 0.7;">Crafting purity, one bottle at a time.</p>
+</footer>
+
+</body>
+</html>
+
