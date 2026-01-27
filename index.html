@@ -3,84 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brahmavida | Premium Ayurvedic Hair Care</title>
+    <title>Brahmiveda | Premium Ayurvedic Hair Care</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         :root { --green: #1b4d3e; --gold: #d4af37; --cream: #f9f9f7; }
-        body { margin: 0; font-family: 'Montserrat', sans-serif; background-color: var(--cream); color: #333; scroll-behavior: smooth; }
+        body { margin: 0; font-family: 'Montserrat', sans-serif; background-color: var(--cream); color: #333; line-height: 1.6; }
         
-        header { background-color: var(--green); color: var(--gold); padding: 25px; text-align: center; border-bottom: 4px solid var(--gold); position: sticky; top: 0; z-index: 100; }
-        header h1 { margin: 0; font-family: 'Playfair Display', serif; letter-spacing: 4px; font-size: 32px; }
+        /* Navigation */
+        header { background-color: var(--green); color: var(--gold); padding: 20px; text-align: center; border-bottom: 4px solid var(--gold); position: sticky; top: 0; z-index: 1000; }
+        header h1 { margin: 0; font-family: 'Playfair Display', serif; letter-spacing: 3px; font-size: 28px; }
 
+        /* Hero Section */
         .hero { display: flex; flex-wrap: wrap; padding: 60px 10%; align-items: center; background: white; gap: 40px; }
         .hero-text { flex: 1; min-width: 300px; }
-        .hero-text h2 { font-family: 'Playfair Display', serif; font-size: 48px; color: var(--green); margin-bottom: 20px; }
+        .hero-text h2 { font-family: 'Playfair Display', serif; font-size: 42px; color: var(--green); margin-bottom: 15px; }
         .hero-image { flex: 1; text-align: center; min-width: 300px; }
-        .hero-image img { max-width: 100%; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        .hero-image img { max-width: 100%; border-radius: 10px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
 
-        .btn { background-color: var(--green); color: white; padding: 18px 35px; text-decoration: none; font-weight: 600; display: inline-block; border-radius: 5px; transition: 0.3s; border: 2px solid var(--green); }
-        .btn:hover { background-color: transparent; color: var(--green); }
+        /* Subscription Box */
+        .order-box { background: var(--green); color: white; padding: 30px; border-radius: 15px; margin-top: 30px; border: 2px solid var(--gold); }
+        .price { font-size: 24px; color: var(--gold); font-weight: bold; }
+        .sub-text { font-size: 14px; margin-bottom: 20px; display: block; }
 
-        .section-title { text-align: center; font-family: 'Playfair Display', serif; font-size: 36px; color: var(--green); margin: 50px 0 30px; }
+        .btn { background-color: var(--gold); color: var(--green); padding: 15px 30px; text-decoration: none; font-weight: bold; border-radius: 5px; display: inline-block; width: 80%; text-align: center; }
 
-        /* Reviews Section */
-        .reviews { padding: 50px 10%; background: #fff; display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; }
-        .review-card { background: var(--cream); padding: 25px; border-radius: 10px; width: 300px; border-left: 5px solid var(--gold); }
-        .stars { color: var(--gold); margin-bottom: 10px; }
+        /* Features */
+        .section-title { text-align: center; font-family: 'Playfair Display', serif; font-size: 32px; color: var(--green); margin-top: 60px; }
+        .grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 40px 10%; }
+        .card { background: white; padding: 25px; border-radius: 10px; width: 280px; text-align: center; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
 
-        /* FAQ Section */
-        .faq { padding: 50px 20%; background: var(--cream); }
-        .faq-item { margin-bottom: 20px; background: white; padding: 15px; border-radius: 8px; }
-        .faq-item h4 { margin: 0; color: var(--green); }
-
-        footer { background: var(--green); color: white; text-align: center; padding: 30px; margin-top: 50px; }
+        footer { background: var(--green); color: white; text-align: center; padding: 40px; margin-top: 60px; }
     </style>
 </head>
 <body>
 
-    <header><h1>BRAHMAVIDA</h1></header>
+    <header><h1>BRAHMIVEDA</h1></header>
 
     <section class="hero">
         <div class="hero-text">
             <h2>Halt Hair Fall. <br>Invoke Growth.</h2>
             <p>Clinically inspired Ayurvedic wisdom. Our secret blend of 21 herbs works deep in your roots to revive dormant hair follicles.</p>
-            <a href="https://wa.me/91XXXXXXXXXX" class="btn">ORDER VIA WHATSAPP</a>
+            
+            <div class="order-box">
+                <p>One-time Purchase: <span class="price">₹999</span></p>
+                <p><strong>Refill & Save:</strong> <span class="price">₹849</span></p>
+                <span class="sub-text">Get a fresh bottle every 45 days automatically.</span>
+                <a href="https://wa.me/+91981068363?text=I%20want%20to%20order%20Brahmiveda" class="btn">ORDER ON WHATSAPP</a>
+            </div>
         </div>
         <div class="hero-image">
-            <img src="https://via.placeholder.com/500x600?text=Brahmavida+Product+Photo" alt="Brahmavida Hair Oil">
+            <img src="product.jpg" alt="Brahmiveda Ayurvedic Hair Oil">
         </div>
     </section>
 
-    <h2 class="section-title">What Our Tribe Says</h2>
-    <section class="reviews">
-        <div class="review-card">
-            <div class="stars">★★★★★</div>
-            <p>"My hair fall stopped in just 2 weeks. Best oil I've used!"</p>
-            <strong>- Ananya R.</strong>
+    <h2 class="section-title">Why Brahmiveda?</h2>
+    <section class="grid">
+        <div class="card">
+            <h3>Refill & Save</h3>
+            <p>Never run out. Subscription users get 15% off on every order in 2026.</p>
         </div>
-        <div class="review-card">
-            <div class="stars">★★★★★</div>
-            <p>"The shampoo doesn't dry out my hair. Very natural fragrance."</p>
-            <strong>- Rahul S.</strong>
+        <div class="card">
+            <h3>Pure Results</h3>
+            <p>No mineral oils or artificial fragrances. Only raw herbal extracts.</p>
+        </div>
+        <div class="card">
+            <h3>Verified Reviews</h3>
+            <p>94% of our users reported reduced hair fall within 21 days.</p>
         </div>
     </section>
-
-    <div class="faq">
-        <h2 class="section-title" style="margin-top:0;">Common Questions</h2>
-        <div class="faq-item">
-            <h4>How often should I use the oil?</h4>
-            <p>For best results, use 3 times a week, leaving it overnight.</p>
-        </div>
-        <div class="faq-item">
-            <h4>Is it suitable for colored hair?</h4>
-            <p>Yes, Brahmavida is 100% natural and safe for treated hair.</p>
-        </div>
-    </div>
 
     <footer>
-        <p>&copy; 2026 Brahmavida Ayurveda | Handcrafted in India</p>
+        <p>&copy; 2026 Brahmiveda Ayurveda | We Care Your Hair</p>
+        <p style="font-size: 12px; opacity: 0.7;">Ancient Secrets. Modern Results.</p>
     </footer>
 
 </body>
 </html>
-
