@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog | Brahmiveda</title>
+    <title>Ayurvedic Blog | Brahmiveda</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <style>
         :root { --green: #1b4d3e; --gold: #d4af37; --white: #ffffff; }
@@ -13,40 +13,48 @@
         .menu-icon { font-size: 30px; cursor: pointer; color: var(--green); }
         .side-nav { height: 100%; width: 0; position: fixed; z-index: 2000; top: 0; left: 0; background-color: var(--green); overflow-x: hidden; transition: 0.5s; padding-top: 60px; }
         .side-nav a { padding: 10px 32px; text-decoration: none; font-size: 18px; color: white; display: block; text-transform: uppercase; }
-        .side-nav .closebtn { position: absolute; top: 0; right: 25px; font-size: 36px; }
-        .blog-container { padding: 50px 10%; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
-        .blog-card { background: white; padding: 25px; border-radius: 10px; border: 1px solid #eee; }
-        .blog-card h3 { color: var(--green); font-family: 'Playfair Display', serif; }
+        .blog-container { padding: 50px 10%; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+        .blog-card { background: white; padding: 20px; border-radius: 8px; border: 1px solid #eee; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .blog-card h3 { color: var(--green); font-family: 'Playfair Display', serif; font-size: 20px; margin-top: 0; }
+        .blog-card p { font-size: 14px; color: #555; }
+        .read-more { color: var(--gold); font-weight: bold; text-decoration: none; font-size: 12px; }
         footer { background: var(--green); color: white; text-align: center; padding: 40px; }
     </style>
 </head>
 <body>
+
 <div id="mySidenav" class="side-nav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="position: absolute; top: 0; right: 25px; font-size: 36px; color:white;">&times;</a>
   <a href="index.html">Shop</a>
   <a href="understanding-hair-loss.html">Understanding Hair Loss</a>
   <a href="blog.html">Blog</a>
-  <a href="about.html">About Us</a>
+  <a href="about.html">About</a>
   <a href="contact.html">Contact</a>
 </div>
+
 <nav>
     <div class="menu-icon" onclick="openNav()">&#9776;</div>
     <a href="index.html" class="logo">BRAHMIVEDA</a>
     <div></div>
 </nav>
 
-<h2 style="text-align:center; font-family:'Playfair Display'; color:var(--green); margin-top:50px;">Ayurvedic Wisdom</h2>
+<h2 style="text-align:center; font-family:'Playfair Display'; color:var(--green); margin-top:40px;">Ayurvedic Wisdom & Hair Care</h2>
+
 <div class="blog-container">
-    <div class="blog-card">
-        <h3>Why Bhringraj is King</h3>
-        <p>Learn how this ancient herb stimulates follicles and prevents greying.</p>
-    </div>
-    <div class="blog-card">
-        <h3>Scalp Detox Tips</h3>
-        <p>How to cleanse your scalp using natural Vedic techniques.</p>
-    </div>
+    <div class="blog-card"><h3>1. The Power of Bhringraj</h3><p>Discover why ancient texts call it the "King of Hair".</p><a href="#" class="read-more">READ MORE →</a></div>
+    <div class="blog-card"><h3>2. Scalp Detox 101</h3><p>Remove chemical buildup using only natural ingredients.</p><a href="#" class="read-more">READ MORE →</a></div>
+    <div class="blog-card"><h3>3. Amla for Growth</h3><p>How Vitamin C in Amla strengthens your roots from within.</p><a href="#" class="read-more">READ MORE →</a></div>
+    <div class="blog-card"><h3>4. The 7-Day Sunlight Method</h3><p>Why we mature our oils in the sun for maximum potency.</p><a href="#" class="read-more">READ MORE →</a></div>
+    <div class="blog-card"><h3>5. Diet for Thick Hair</h3><p>Vedic superfoods you should eat every day for hair volume.</p><a href="#" class="read-more">READ MORE →</a></div>
+    <div class="blog-card"><h3>6. Stress and Hair Fall</h3><p>The connection between mental peace and scalp health.</p><a href="#" class="read-more">READ MORE →</a></div>
+    <div class="blog-card"><h3>7. Oiling Techniques</h3><p>The correct Ayurvedic "Abhyanga" for head massage.</p><a href="#" class="read-more">READ MORE →</a></div>
+    <div class="blog-card"><h3>8. Post-Pregnancy Hair Care</h3><p>Gentle recovery tips for new mothers using Ayurveda.</p><a href="#" class="read-more">READ MORE →</a></div>
+    <div class="blog-card"><h3>9. Fighting Dandruff Naturally</h3><p>Neem and Lemon: Nature's answer to a clean scalp.</p><a href="#" class="read-more">READ MORE →</a></div>
+    <div class="blog-card"><h3>10. Winter Hair Care</h3><p>How to protect your hair from dryness and breakage.</p><a href="#" class="read-more">READ MORE →</a></div>
 </div>
+
 <footer><p>&copy; 2026 Brahmiveda Ayurveda</p></footer>
+
 <script>
 function openNav() { document.getElementById("mySidenav").style.width = "250px"; }
 function closeNav() { document.getElementById("mySidenav").style.width = "0"; }
